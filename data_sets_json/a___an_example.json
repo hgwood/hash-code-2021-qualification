@@ -1,0 +1,58 @@
+{
+  "duration": 6,
+  "nintersections": 4,
+  "nstreets": 5,
+  "ncars": 2,
+  "score": 1000,
+  "streets": [
+    {
+      "start": 2,
+      "end": 0,
+      "name": "rue-de-londres",
+      "length": 1
+    },
+    {
+      "start": 0,
+      "end": 1,
+      "name": "rue-d-amsterdam",
+      "length": 1
+    },
+    {
+      "start": 3,
+      "end": 1,
+      "name": "rue-d-athenes",
+      "length": 1
+    },
+    {
+      "start": 2,
+      "end": 3,
+      "name": "rue-de-rome",
+      "length": 2
+    },
+    {
+      "start": 1,
+      "end": 2,
+      "name": "rue-de-moscou",
+      "length": 3
+    }
+  ],
+  "cars": [
+    {
+      "pathLength": 4,
+      "path": [
+        "rue-de-londres",
+        "rue-d-amsterdam",
+        "rue-de-moscou",
+        "rue-de-rome"
+      ]
+    },
+    {
+      "pathLength": 3,
+      "path": [
+        "rue-d-athenes",
+        "rue-de-moscou",
+        "rue-de-londres"
+      ]
+    }
+  ]
+}

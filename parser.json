@@ -1,0 +1,13 @@
+[
+  "duration",
+  "nintersections",
+  "nstreets",
+  "ncars",
+  "score",
+  [
+    "streets",
+    "nstreets",
+    ["start", "end", { "value": "string", "name": "name" }, "length"]
+  ],
+  ["cars", "ncars", ["pathLength", ["path", "pathLength", "string"]]]
+]
