@@ -55,8 +55,18 @@ def compose_streets_by_intersection(streets):
 def handle_dataset(data):
     streets = data["streets"]
     streets_by_intersection = compose_streets_by_intersection(streets)
-    return [(intersection, [(street, 1) for street in streets]) for intersection, streets in streets_by_intersection.items()]
+    car_weights = compose_car_weights(data)
+    return [(intersection, [(street, car_weights[street]) for street in streets if street in car_weights] or [(streets[0], 1)]) for intersection, streets in streets_by_intersection.items()]
 
+def compose_car_weights(data):
+    cars = data["cars"]
+    result = {}
+    for car in cars:
+        for street in car["path"]:
+            if street not in result:
+                result[street] = 0
+            result[street] += 1
+    return result
 
 ################################################################
 main()
