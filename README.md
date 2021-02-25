@@ -1,4 +1,7 @@
 # Hash Code 2021 Qualification Round
 
-Team: No for no while
-Members: @Claveaum, @HarryPommier, @hgwood, @punkstarman
+## The Team
+
+- Name: No for no while
+- Members: @Claveaum, @HarryPommier, @hgwood, @punkstarman
+- Hub: GDG Nantes
